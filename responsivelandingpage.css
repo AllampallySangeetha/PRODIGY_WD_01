@@ -1,0 +1,102 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a.active {
+    background-color: #666;
+}
+
+nav ul li a.home:hover {
+    background-color: red;
+}
+
+nav ul li a.about:hover {
+    background-color: yellow;
+}
+
+nav ul li a.services:hover {
+    background-color: blue;
+}
+
+nav ul li a.contact:hover {
+    background-color: green;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#about {
+    background-color: #e4e4e4;
+}
+
+#services {
+    background-color: #d4d4d4;
+}
+
+#contact {
+    background-color: #c4c4c4;
+}
+
+.scrolled {
+    background-color: #111 !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+        height: auto;
+    }
+}
